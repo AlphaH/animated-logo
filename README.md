@@ -27,14 +27,25 @@ Make sure the foreground logo image is the same size as the canvas and the backg
 
 ## Options
 `canvasWidth` `int` (default value `200`)
+
 Width of the canvas that holds the logo (and thus the effective width of your logo)
+
 `canvasHeight` `int` (default value `100`)
+
 Height of the canvas that holds the logo (and thus the effective height of your logo)
+
 `fgImage` `string` (default value `'images/logo-fg.png'`)
+
 Path to the foreground image of your logo.
+
 `bgImage` `string` (default value `'images/logo-bg.png'`)
+
 Path to the background image of your logo.
+
 `staticImage` `string` (default value `'images/logo-static.png'`)
+
 The default, static, background image for when the animation won't work.
+
 `animationSpeed` `int` (default value `100`)
+
 The speed of the animation. Lower is faster.
