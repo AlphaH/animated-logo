@@ -1,22 +1,20 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Animated logo</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script rel="javascript" type="text/javascript" src="js/animated-logo.js"></script>
-  </head>
-  <body>
-    <canvas width=200 height=100 id="logo"></canvas>
-    <!-- De <img> in de canvas is voor oude browsers die canvas elementen niet aankunnen. Je kan hier bijvoorbeeld het .gif bestand plaatsen, of een niet-bewegend bestand -->
-    <script>
-      var canvas = document.getElementById('logo');
-      var background_url = 'images/logo-bg.png';
-      var foreground_url = 'images/logo-fg.png';
-      animate_logo({
-        canvas: canvas,
-        foreground_url: foreground_url,
-        background_url: background_url
-      });
-    </script>
-  </body>
+	<head>
+		<title>Animated logo example</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script rel="javascript" type="text/javascript" src="js/jquery.animated-logo.js"></script>
+	</head>
+	<body>
+		<div id="logo"></div>
+		<script>
+			$('#logo').animateLogo({
+				foreground_url: 'images/logo-fg.png',
+				background_url: 'images/logo-bg.png',
+				staticImage: 'images/logo-static.png',
+				canvasWidth: 200,
+				canvasHeight: 100
+			});
+		</script>
+	</body>
 </html>
