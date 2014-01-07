@@ -34,6 +34,9 @@
 <p>Give a logo an animated background by providing a foreground and background image.
 Currently the plugin exclusively supports a horizontal back-and-forth animation for the background image.</p>
 
+<h2><a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demonstration</h2>
+<div id="logodemo"></div>
+<br>
 <h2>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
@@ -94,6 +97,16 @@ Currently the plugin exclusively supports a horizontal back-and-forth animation 
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.animated-logo.js"></script>
+    <script>
+      $('#logodemo').animateLogo({
+        foreground_url: 'images/logo-fg.png',
+        background_url: 'images/logo-bg.png',
+        staticImage: 'images/logo-static.png',
+        canvasWidth: 200,
+        canvasHeight: 100
+      });
+    </script>
   </body>
 </html>
