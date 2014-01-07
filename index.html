@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Animated Logo by AlphaH</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Animated Logo</h1>
+        <p>Gives a logo an animated background.</p>
+
+        <p class="view"><a href="https://github.com/AlphaH/animated-logo">View the Project on GitHub <small>AlphaH/animated-logo</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/AlphaH/animated-logo/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/AlphaH/animated-logo/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/AlphaH/animated-logo">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="animated-logo-plugin-for-jquery" class="anchor" href="#animated-logo-plugin-for-jquery"><span class="octicon octicon-link"></span></a>Animated Logo Plugin for jQuery</h1>
+
+<p>Give a logo an animated background by providing a foreground and background image.
+Currently the plugin exclusively supports a horizontal back-and-forth animation for the background image.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Animated Logo needs jQuery to run. Include jQuery and the plugin script in your HTML code:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"jquery.js"</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"jquery.animated-logo.js"</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<p>You'll also need a <code>&lt;div&gt;</code> which will contain the logo:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"logo"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+
+<p>Finally, use this JavaScript code to create the animated logo:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#logo'</span><span class="p">).</span><span class="nx">animateLogo</span><span class="p">({</span>
+    <span class="nx">foreground_url</span><span class="o">:</span> <span class="s1">'/path/to/foreground/image.png'</span><span class="p">,</span>
+    <span class="nx">background_url</span><span class="o">:</span> <span class="s1">'/path/to/background/image.png'</span><span class="p">,</span>
+    <span class="nx">staticImage</span><span class="o">:</span> <span class="s1">'/path/to/static/logo/image.png'</span><span class="p">,</span>
+    <span class="nx">canvasWidth</span><span class="o">:</span> <span class="mi">200</span><span class="p">,</span>
+    <span class="nx">canvasHeight</span><span class="o">:</span> <span class="mi">100</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>Make sure the foreground logo image is the same size as the canvas and the background logo image is wider than the logo.</p>
+
+<h2>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<p><code>int canvasWidth</code> (default value <code>200</code>)</p>
+
+<p>Width of the canvas that holds the logo (and thus the effective width of your logo)</p>
+
+<p><code>int canvasHeight</code> (default value <code>100</code>)</p>
+
+<p>Height of the canvas that holds the logo (and thus the effective height of your logo)</p>
+
+<p><code>string fgImage</code> (default value <code>'images/logo-fg.png'</code>)</p>
+
+<p>Path to the foreground image of your logo.</p>
+
+<p><code>string bgImage</code> (default value <code>'images/logo-bg.png'</code>)</p>
+
+<p>Path to the background image of your logo.</p>
+
+<p><code>string staticImage</code> (default value <code>'images/logo-static.png'</code>)</p>
+
+<p>The default, static, background image for when the animation won't work.</p>
+
+<p><code>int animationSpeed</code> (default value <code>100</code>)</p>
+
+<p>The speed of the animation. Lower is faster.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/AlphaH">AlphaH</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
