@@ -1,3 +1,6 @@
+// Animated Logo 2.1.0
+// http://alphah.github.io/animated-logo/
+// Copyright (c) 2013, 2014 Nathaniel Williams
 (function($) {
 	$.fn.animateLogo = function(options) {
 		var defaults = {
